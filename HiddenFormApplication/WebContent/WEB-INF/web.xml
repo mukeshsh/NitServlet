@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="4.0" id="WebApp_ID" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<display-name>HiddenFormApplication</display-name>
+<servlet>
+	<description>
+	</description>
+	<display-name>FirstServlet</display-name>
+	<servlet-name>FirstServlet</servlet-name>
+	<servlet-class>com.nt.servlet.FirstServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>FirstServlet</servlet-name>
+	<url-pattern>/FirstServlet</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+<welcome-file>input.html</welcome-file>
+</welcome-file-list>
+</web-app>

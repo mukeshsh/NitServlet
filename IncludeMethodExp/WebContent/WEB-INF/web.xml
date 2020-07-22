@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>RDIncludeMethod</display-name>
+  <welcome-file-list>
+    <welcome-file>input.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+       <param-name>driver</param-name>
+       <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+   <context-param>
+       <param-name>url</param-name>
+       <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  </context-param>
+   <context-param>
+       <param-name>dbuser</param-name>
+       <param-value>jdbc</param-value>
+  </context-param>
+   <context-param>
+       <param-name>password</param-name>
+       <param-value>class</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>head</servlet-name>
+    <servlet-class>com.nt.servlet.HeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>head</servlet-name>
+    <url-pattern>/headurl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>db</servlet-name>
+    <servlet-class>com.nt.servlet.EmpSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>db</servlet-name>
+    <url-pattern>/dburl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+       <servlet-name>err</servlet-name>
+    <servlet-class>com.nt.servlet.ErrorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>err</servlet-name>
+    <url-pattern>/eurl</url-pattern>
+  </servlet-mapping>
+</web-app>

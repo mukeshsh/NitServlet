@@ -1,0 +1,121 @@
+<h1 style="color:red;text-align:center"> Working with All form comps</h1>
+
+<form action="registerurl"  method="GET">
+     <table border="1" style="float:left">
+        <tr>
+          <td>Name::   </td>
+          <td><input type="text" name="pname" placeholder="enter name"></td>
+        </tr>
+        <tr>
+          <td>Age::   </td>
+          <td><input type="password" name="page" placeholder="enter age"></td>
+        </tr>
+        <tr>
+          <td>Gender::   </td>
+          <td><input type="radio" name="gender" value="M">Male &nbsp;
+                  <input type="radio" name="gender" value="F" checked>FeMale &nbsp;
+          </td>
+        </tr>
+          <tr>
+          <td>Address  </td>
+          <td>
+              <textarea name="addrs" rows="5" cols="25"  placeholder="enter address">
+              </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Marital Status::   </td>
+          <td>
+              <input type="checkbox"  name="ms"  value="married">Married
+          </td>
+        </tr>
+        
+        <tr>
+          <td>DOB </td>
+          <td>
+              <input type="date" name="dob" >
+          </td>
+        </tr>
+        
+         <tr>
+          <td>Qualification:: </td>
+          <td>
+              <select name="qlfy">
+                  <option value="" selected>---select a value--</option>
+                   <option value="engg" >B.E/B.Tech</option>
+                   <option value="medico" >MBBS/BDS/MD</option>
+                   <option value="arts" >BA/MA</option>
+                   <option value="commerce" >B.Com/M.com</option>
+              </select>
+          </td>
+        </tr>
+        
+         <tr>
+          <td>Courses:: </td>
+          <td>
+              <select name="courses" multiple>
+                  <option value="oracle" >Oracle pkg</option>
+                   <option value="java" >Java pkg</option>
+                   <option value=".net" >.NET pkg</option>
+                   <option value="php" >PHP PKG</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Hobies:: </td>
+          <td>
+               <input type="checkbox" name="hb"  value="reading">Reading books &nbsp;
+               <input type="checkbox" name="hb"  value="sleeping" checked>Meditation &nbsp;
+               <input type="checkbox" name="hb"  value="cooking">Cooking &nbsp;
+               <input type="checkbox" name="hb"  value="roaming">Traveling &nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td>Email:: </td>
+          <td>
+               <input type="email" name="mail"  placeholder="enter email" >
+          </td>
+        </tr>
+        <tr>
+          <td>FB Url:: </td>
+          <td>
+               <input type="url" name="url"  placeholder="enter fb url" >
+          </td>
+        </tr>
+        <tr>
+          <td>MobileNo:: </td>
+          <td>
+               <input type="tel" name="mobileNo"  placeholder="enter phone no" >
+          </td>
+        </tr>
+        <tr>
+          <td>Favorite Color:: </td>
+          <td>
+               <input type="color" name="color"  placeholder="choose color" >
+          </td>
+        </tr>
+        <tr>
+          <td>Favorite Week day:: </td>
+          <td>
+               <input type="week" name="week"  placeholder="choose week day" >
+          </td>
+        </tr>
+        <tr>
+          <td>Month of Birth:: </td>
+          <td>
+               <input type="month" name="month"  placeholder="choose birth month" >
+          </td>
+        </tr>
+        <tr>
+          <td>Time of Birth:: </td>
+          <td>
+               <input type="time" name="time"  placeholder="choose birth time" >
+          </td>
+        </tr>
+        <tr>
+           <td><input type="reset"  name="cancel"> </td>
+           <td><input type="submit" name="register"> </td>
+        </tr>
+     </table>
+
+</form>

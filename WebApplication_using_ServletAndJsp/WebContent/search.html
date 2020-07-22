@@ -1,0 +1,44 @@
+<script language="JavaScript">
+	function isHtml() {
+		frm.source.value = 'html';
+		validate();
+	}
+	function isExcel() {
+		frm.source.value = 'excel';
+		validate();
+	}
+	function validate() {
+		if (frm.category.selectIndex == '0') {
+			alert("You Must Select Category");
+			return false;
+		} else {
+			frm.submit();
+			return true;
+		}
+	}
+</script>
+
+
+
+<h1 style="color: red; text-align: center">SEARCH BOOK DETAILS::</h1>
+<form action="controller" method="post" name="frm">
+	<table border="1" cellpadding="6" cellspacing="6" align=center
+		bgcolor='lavender'>
+		<tr>
+			<th>Select Category</th>
+			<th><select name='category'>
+					<option value=" " selected>---Select a Value---</option>
+					<option value='java'>JAVA</option>
+					<option value='.net'>.NET</option>
+					<option value='php'>PHP</option>
+					<option value='oracle'>ORACLE</option>
+					<option value='jscript'>JavaScript</option>
+			</select> <span id="categoryErr"></span></th>
+		</tr>
+		<tr>
+			<th><input type='button' value='HtmlOutput' onClick='isHtml()'></th>
+			<th><input type='button' value='ExcelOutput' onClick='isExcel()'></th>
+		</tr>
+	</table>
+	<input type="hidden" name='source' readonly />
+</form>
